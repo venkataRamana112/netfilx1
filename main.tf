@@ -5,7 +5,7 @@ region = "us-east-1"
 resource "aws_instance" "one" {
 count = 4
 ami = "ami-0ddc798b3f1a5117e"
-instance_type = "t2.medium"
+instance_type = "t2.micro"
 key_name = "ramanapem"
 vpc_security_group_ids = ["sg-05a41ab493052c23c"]
 tags = {
